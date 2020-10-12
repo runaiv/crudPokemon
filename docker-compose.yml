@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  mongo:
+    container_name: mongoDb
+    image: mongo
+    ports:
+      - "27017:27017"
+    restart: always
+  nginx:
+    container_name: nginxServer
+    image: nginx
+    ports:
+      - "8080:80"
+    restart: always
+
